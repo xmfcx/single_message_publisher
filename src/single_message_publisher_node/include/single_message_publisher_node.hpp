@@ -31,6 +31,7 @@ public:
 
 private:
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_cloud_{};
+  sensor_msgs::msg::PointCloud2::UniquePtr msg_cloud_{};
 
   void on_timer();
 
