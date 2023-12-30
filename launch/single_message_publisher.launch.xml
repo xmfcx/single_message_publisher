@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="single_message_publisher" exec="single_message_publisher_node" name="single_message_publisher"
+        output="screen">
+    <param from="$(find-pkg-share single_message_publisher)/config/single_message_publisher.params.yaml"/>
+  </node>
+</launch>
